@@ -1,6 +1,9 @@
-from app import main
-import streamlit as st
+from http.server import BaseHTTPRequestHandler
 
-# This is necessary for Vercel deployment
-def handler(request, response):
-    return response(200, main())
+class handler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        self.send_response(200)
+        self.send_header('Content-type', 'text/plain')
+        self.end_headers()
+        self.wfile.write(f'Please use Streamlit Cloud for this app instead of Vercel. Vercel does not support Streamlit apps directly.'.encode())
+        return
