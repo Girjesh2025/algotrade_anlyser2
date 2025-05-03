@@ -10,4 +10,9 @@ numpy==1.24.3
 plotly==5.15.0
 python-dotenv==1.0.0
 pip install --upgrade pip
+streamlit
+pandas
+yfinance
+matplotlib
+
 
