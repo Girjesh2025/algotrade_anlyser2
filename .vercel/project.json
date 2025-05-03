@@ -1,0 +1,13 @@
+{
+  "buildCommand": "",
+  "devCommand": "streamlit run app.py",
+  "framework": null,
+  "installCommand": "",
+  "outputDirectory": "",
+  "public": false,
+  "functions": {
+    "api/index.py": {
+      "runtime": "python3.9"
+    }
+  }
+}
